@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #111111; /* Preto bem escuro */
+  color: #f5f5f5; /* Branco levemente acinzentado para bom contraste */
+  font-family: var(--font-source-serif-pro); /* Mantendo a fonte principal */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-cinzel); /* Mantendo a fonte para títulos */
+  color: #e0e0e0; /* Branco um pouco menos intenso para títulos */
+}
+
+button {
+  font-family: var(--font-lato); /* Mantendo a fonte para botões */
+}
+
+/* Estilos específicos para a página de login para se aproximar do tema */
+.bg-\[\#3a4035\] {
+  /* Remover a cor de fundo anterior do container de login */
+  background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+  border: 1px solid #333; /* Borda sutil */
+}
+
+.text-\[\#BC8A6E\] {
+  /* Cor do texto secundário (ex: labels) */
+  color: #b38867; /* Tom de bege envelhecido */
+}
+
+.bg-\[\#2E332A\] {
+  /* Remover a cor de fundo anterior dos inputs */
+  background-color: #222; /* Cinza escuro para os inputs */
+  border-color: #444;
+  color: #f5f5f5;
+}
+
+.focus\:ring-\[\#A8904F\] {
+  /* Cor do foco */
+  --tw-ring-color: #555 !important; /* Foco mais discreto */
+}
+
+.bg-\[\#A8904F\] {
+  /* Cor do botão primário */
+  background-color: #555;
+  color: #f5f5f5;
+}
+
+.hover\:bg-\[\#c0a95b\] {
+  /* Hover do botão primário */
+  background-color: #777;
+}
+
+.border-\[\#A8904F\]\/50 {
+  /* Borda dos inputs */
+  border-color: rgba(68, 68, 68, 0.5);
+}
+
+.border-\[\#BC8A6E\] {
+  /* Borda do botão secundário */
+  border-color: #b38867;
+}
+
+.hover\:bg-\[\#BC8A6E\] {
+  /* Hover do botão secundário */
+  background-color: #b38867;
+  color: #111111;
+}
+/* Estilos para o editor Tiptap */
+.ProseMirror {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-family: var(--font-cinzel);
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.3em;
+  }
+
+  ul,
+  ol {
+    padding: 0 1rem;
+  }
+}
